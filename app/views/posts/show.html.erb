@@ -11,6 +11,7 @@
       $.getJSON("/posts/" + nextId + "/post_data", function(data){
         $(".postTitle").text(data["title"]);
         $(".postBody").text(data["description"]);
+        $(".js-next").attr("data-id", data["id"])
       })
     })
   })
